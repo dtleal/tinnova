@@ -4,7 +4,7 @@
 # Author: Diego
 # Created at: Sáb  2 Set 2023 00:54:10 -03
 # Project: Tinnova
-#s
+#
 #********************************************************************/
 
 #include <stdio.h>
