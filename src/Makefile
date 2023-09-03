@@ -7,8 +7,8 @@ JUMP_AVE_OUT = calc_jump_average
 TXT_FILE = txt_file.c
 TXT_FILE_OUT = txt_file
 
-EXE4_SRC = exercicio_04.c
-EXE4_OUT = exe04
+BUBBLE_SORT = bubble_sort.c
+BUBBLE_SORT_OUT = bubble_sort
 
 # Compiler settings
 CC = gcc
@@ -30,10 +30,10 @@ calc_jump_average: $(JUMP_AVE)
 txt_file: $(TXT_FILE)
 	$(CC) $(CFLAGS) -o $(BIN_DIR)/$(TXT_FILE_OUT) $<
 
-exe04: $(EXE4_SRC)
-	$(CC) $(CFLAGS) -o $(BIN_DIR)/$(EXE4_OUT) $<
+bubble_sort: $(BUBBLE_SORT)
+	$(CC) $(CFLAGS) -o $(BIN_DIR)/$(BUBBLE_SORT_OUT) $<
 
-all: calc_lamps calc_jump_average txt_file exe04
+all: calc_lamps calc_jump_average txt_file bubble_sort
 
 clean:
 	rm -f $(BIN_DIR)/$(EXE1_OUT) $(BIN_DIR)/$(JUMP_AVE_OUT) $(BIN_DIR)/$(TXT_FILE_OUT) $(BIN_DIR)/$(EXE4_OUT)
