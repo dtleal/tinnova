@@ -36,4 +36,4 @@ bubble_sort: $(BUBBLE_SORT)
 all: calc_lamps calc_jump_average txt_file bubble_sort
 
 clean:
-	rm -f $(BIN_DIR)/$(EXE1_OUT) $(BIN_DIR)/$(JUMP_AVE_OUT) $(BIN_DIR)/$(TXT_FILE_OUT) $(BIN_DIR)/$(EXE4_OUT)
+	rm -f $(BIN_DIR)/$(CALC_LAMPS_OUT) $(BIN_DIR)/$(JUMP_AVE_OUT) $(BIN_DIR)/$(TXT_FILE_OUT) $(BIN_DIR)/$(BUBBLE_SORT_OUT)
