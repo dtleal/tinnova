@@ -1,3 +1,12 @@
+/********************************************************************
+# Description: Cria um arquivo txt para insercao e leitura de caracteres
+#
+# Author: Diego
+# Created at: Dom  3 Set 2023 19:25:26 -03
+# Project: Tinnova
+#
+#********************************************************************/
+
 #include <stdio.h>
 
 #include "bubble_sort.h"

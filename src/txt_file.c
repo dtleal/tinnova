@@ -2,7 +2,7 @@
 # Description: Cria um arquivo txt para insercao e leitura de caracteres
 #
 # Author: Diego
-# Created at: Dom  3 Set 2023 18:17:41 -03
+# Created at: Dom  3 Set 2023 15:17:41 -03
 # Project: Tinnova
 #
 #********************************************************************/
