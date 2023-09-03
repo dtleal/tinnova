@@ -4,8 +4,8 @@ CALC_LAMPS_OUT = calc_lamps
 JUMP_AVE = jump_average.c
 JUMP_AVE_OUT = calc_jump_average
 
-EXE3_SRC = exercicio_03.c
-EXE3_OUT = exe03
+TXT_FILE = txt_file.c
+TXT_FILE_OUT = txt_file
 
 EXE4_SRC = exercicio_04.c
 EXE4_OUT = exe04
@@ -27,13 +27,13 @@ calc_lamps: $(CALC_LAMPS)
 calc_jump_average: $(JUMP_AVE)
 	$(CC) $(CFLAGS) -o $(BIN_DIR)/$(JUMP_AVE_OUT) $<
 
-exe03: $(EXE3_SRC)
-	$(CC) $(CFLAGS) -o $(BIN_DIR)/$(EXE3_OUT) $<
+txt_file: $(TXT_FILE)
+	$(CC) $(CFLAGS) -o $(BIN_DIR)/$(TXT_FILE_OUT) $<
 
 exe04: $(EXE4_SRC)
 	$(CC) $(CFLAGS) -o $(BIN_DIR)/$(EXE4_OUT) $<
 
-all: exe01 exe02 exe03 exe04
+all: calc_lamps calc_jump_average txt_file exe04
 
 clean:
-	rm -f $(BIN_DIR)/$(EXE1_OUT) $(BIN_DIR)/$(JUMP_AVE_OUT) $(BIN_DIR)/$(EXE3_OUT) $(BIN_DIR)/$(EXE4_OUT)
+	rm -f $(BIN_DIR)/$(EXE1_OUT) $(BIN_DIR)/$(JUMP_AVE_OUT) $(BIN_DIR)/$(TXT_FILE_OUT) $(BIN_DIR)/$(EXE4_OUT)
